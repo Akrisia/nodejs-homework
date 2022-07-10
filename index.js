@@ -45,7 +45,7 @@ const invokeAction = async ({ action, id, name, email, phone }) => {
   }
 };
 
-const start = async (argv) => {
+const startFunction = async (argv) => {
   try {
     await invokeAction(argv);
   } catch (error) {
@@ -53,4 +53,4 @@ const start = async (argv) => {
   }
 };
 
-start(argv);
+startFunction(argv);
